@@ -36,7 +36,7 @@ public class LeaveRequestController {
         int leaveType = Integer.parseInt(job.getVariablesAsMap().get("leaveType").toString());
         System.out.println(employeeName);
         LeaveTypeModel leaveTypeModel = leaveTypeRepository.findById(leaveType)
-                .orElseThrow(() -> new RuntimeException("Leave Type not found"));
+                .orElseThrow(() -> new RuntimeException("Leave Type dfdfvhj not found"));
 
         LeaveRequestModel requestModel = leaveRequestRepository.save(new LeaveRequestModel(
                 employeeName,
