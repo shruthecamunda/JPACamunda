@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: leaveRequest
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/camunda
+    username: root
+    password: Welcome@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+camunda:
+  client:
+    mode: saas
+    auth:
+      client-id: ZFioYk.nnEpH45G1tUp.s71MMdluC23k
+      client-secret: dEVOBtJ9xsBr.ge-srr0hEigfTU1qOTHwzv0vYJsr-siT2JLhabqAbrMub74kOFg
+    cluster-id: 29689096-1a37-4c32-8739-9223b268281d
+    region: sin-1
